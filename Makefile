@@ -1,9 +1,12 @@
 #Makefile
 install:
-	npm cli
+	npm ci
 
 brain-games:
-	node /bin/brain-games.js
+	bin/brain-games.js
+
+brain-even:
+	bin/brain-even.js
 
 publish: 
 	npm publish --dry-run

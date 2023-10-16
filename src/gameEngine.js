@@ -4,6 +4,7 @@ import readlinesync from 'readline-sync';
 const roundsCount = 3;
 
 function gameEngine(rule, getQnA) {
+
     console.log('Welcome to the Brain Games!');
     const userName = getName();
     console.log(rule);
