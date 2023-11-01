@@ -2,6 +2,9 @@
 install:
 	npm ci
 
+brain-gcd:
+	bin/brain-gcd.js
+
 brain-games:
 	bin/brain-games.js
 
