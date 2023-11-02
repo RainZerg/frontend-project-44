@@ -5,3 +5,4 @@
 Asciinema for running brain-even game: https://asciinema.org/a/CT18VK2aZuTaXSMpNB1ZuGSTk
 Asciinema for running brain-calc game: https://asciinema.org/a/yQFMnHD5WoQd40V1FvGlmtoVT
 Asciinema for running brain-gcd game: https://asciinema.org/a/JJ7cVE2iYyjpWoWb3ofkb8rpq
+Asciinema for running brain-progression game: https://asciinema.org/a/GmoHZ2AHIBSKkksSfAEGbwdFV
