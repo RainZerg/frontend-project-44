@@ -12,7 +12,7 @@ function answerGcd(a, b) {
 }
 
 function getQnA() {
-    const question = [getRandomNum(), getRandomNum()];
+    const question = [getRandomNum(0, 100), getRandomNum(0, 100)];
     const answer = answerGcd(...question).toString();
     return [question.join(' '), answer];
 }

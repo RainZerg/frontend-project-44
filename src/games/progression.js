@@ -5,10 +5,10 @@ const rule = 'What number is missing from progression';
 
 const progressionLength = 10;
 
-function getProgression(start, step) {
+function getProgression(startProgression, stepProgression) {
     const progressions = [];
     for (let i=0; i < progressionLength; i += 1) {
-        const value = start + step * i;
+        const value = startProgression + stepProgression * i;
         progressions.push(value);
     }
     return progressions;
@@ -23,7 +23,7 @@ function getQnA() {
     const minIndexOfHiddenNumber = 0;
     const maxIndexOfHiddenNumber = progressionLength - 1;
     const indexOfHiddenNumber = getRandomNum(minIndexOfHiddenNumber, maxIndexOfHiddenNumber);
-    const answer = progression[indexOfHiddenNumber].toString();
+    const answer = String(progression[indexOfHiddenNumber]);
     progression[indexOfHiddenNumber] = '..';
     const question = progression.join(' ');
     return [question, answer];

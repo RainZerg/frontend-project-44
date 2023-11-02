@@ -5,7 +5,7 @@ import randomEquasion from '../randomEquasion.js';
 const rule = 'What is the result of the expression?';
 
 function getQnA() {
-  const equasion = randomEquasion(getRandomNum(), getRandomNum());
+  const equasion = randomEquasion(getRandomNum(0, 100), getRandomNum(0, 100));
   return [equasion.equasion, equasion.result];
 }
 
