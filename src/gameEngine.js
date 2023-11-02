@@ -1,5 +1,5 @@
 import readlinesync from 'readline-sync';
-import { getName } from './cli.js';
+import getName from './cli.js';
 
 const roundsCount = 3;
 
@@ -26,4 +26,4 @@ function gameEngine(rule, getQnA) {
   console.log(`Congratulations, ${userName}!`);
 }
 
-export { gameEngine };
+export default gameEngine;

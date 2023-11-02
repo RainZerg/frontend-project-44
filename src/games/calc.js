@@ -1,5 +1,5 @@
-import { gameEngine } from '../gameEngine.js';
-import { getRandomNum } from '../getRandomNumber.js';
+import gameEngine from '../gameEngine.js';
+import getRandomNum from '../getRandomNumber.js';
 import randomEquasion from '../randomEquasion.js';
 
 const rule = 'What is the result of the expression?';
@@ -13,4 +13,4 @@ function calculate() {
   gameEngine(rule, getQnA);
 }
 
-export { calculate };
+export default calculate;

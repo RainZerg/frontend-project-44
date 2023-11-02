@@ -1,24 +1,24 @@
-import { gameEngine } from '../gameEngine.js';
-import { getRandomNum } from '../getRandomNumber.js';
+import gameEngine from '../gameEngine.js';
+import getRandomNum from '../getRandomNumber.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
 function answerGcd(a, b) {
-    if (!b) {
-        return a;
-    }
+  if (!b) {
+    return a;
+  }
 
-    return answerGcd(b, a % b);
+  return answerGcd(b, a % b);
 }
 
 function getQnA() {
-    const question = [getRandomNum(0, 100), getRandomNum(0, 100)];
-    const answer = answerGcd(...question).toString();
-    return [question.join(' '), answer];
+  const question = [getRandomNum(0, 100), getRandomNum(0, 100)];
+  const answer = answerGcd(...question).toString();
+  return [question.join(' '), answer];
 }
 
 function getGcd() {
-    gameEngine(rule, getQnA)
+  gameEngine(rule, getQnA);
 }
 
-export { getGcd };
+export default getGcd;

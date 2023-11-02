@@ -1,5 +1,5 @@
-import { gameEngine } from '../gameEngine.js';
-import { getRandomNum } from '../getRandomNumber.js';
+import gameEngine from '../gameEngine.js';
+import getRandomNum from '../getRandomNumber.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -14,4 +14,4 @@ function getEven() {
   gameEngine(rule, getQnA);
 }
 
-export { getEven };
+export default getEven;
