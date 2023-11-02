@@ -1,7 +1,7 @@
 import { gameEngine } from '../gameEngine.js';
 import { getRandomNum } from '../getRandomNumber.js';
 
-const rule = 'What number is missing from progression';
+const rule = 'What number is missing in the progression?';
 
 const progressionLength = 10;
 
