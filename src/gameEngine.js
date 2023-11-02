@@ -11,7 +11,7 @@ function gameEngine(rule, getQnA) {
 
   while (correctAnswersCount < roundsCount) {
     const [question, correctAnswer] = getQnA();
-    console.log(`Question ${question}`);
+    console.log(`Question: ${question}`);
     const userAnswer = readlinesync.question('Your answer: ');
 
     if (correctAnswer === userAnswer) {
