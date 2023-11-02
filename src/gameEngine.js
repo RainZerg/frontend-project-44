@@ -19,7 +19,7 @@ function gameEngine(rule, getQnA) {
       correctAnswersCount += 1;
     } else {
       console.log(`"${userAnswer}" is a wrong answer.\nCorrect answer was "${correctAnswer}".`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
