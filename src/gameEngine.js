@@ -24,4 +24,4 @@ export default (rule, getQnA) => {
     }
   }
   console.log(`Congratulations, ${userName}!`);
-}
+};

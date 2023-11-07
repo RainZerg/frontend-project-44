@@ -16,4 +16,4 @@ export default (num1, num2) => {
     equasion: `${num1} * ${num2}`,
     result: `${num1 * num2}`,
   };
-}
+};

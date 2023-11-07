@@ -9,7 +9,6 @@ function getQnA() {
   return [equasion.equasion, equasion.result];
 }
 
-
 export default () => {
-    gameEngine(rule, getQnA);
-  };
+  gameEngine(rule, getQnA);
+};
