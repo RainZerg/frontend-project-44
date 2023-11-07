@@ -1,4 +1,4 @@
-function randomEquasion(num1, num2) {
+export default (num1, num2) => {
   const arrayOfSymbols = ['+', '-', '*'];
   const randomSymbol = arrayOfSymbols[Math.floor(Math.random() * arrayOfSymbols.length)];
   if (randomSymbol === '+') {
@@ -17,5 +17,3 @@ function randomEquasion(num1, num2) {
     result: `${num1 * num2}`,
   };
 }
-
-export default randomEquasion;

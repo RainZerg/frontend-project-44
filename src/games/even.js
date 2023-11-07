@@ -10,8 +10,6 @@ function getQnA() {
   return [question, answer];
 }
 
-function getEven() {
+export default () => {
   gameEngine(rule, getQnA);
-}
-
-export default getEven;
+};

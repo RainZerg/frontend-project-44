@@ -17,8 +17,6 @@ function getQnA() {
   return [question.join(' '), answer];
 }
 
-function getGcd() {
+export default () => {
   gameEngine(rule, getQnA);
-}
-
-export default getGcd;
+};

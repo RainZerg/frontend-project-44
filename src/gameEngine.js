@@ -3,7 +3,7 @@ import getName from './cli.js';
 
 const roundsCount = 3;
 
-function gameEngine(rule, getQnA) {
+export default (rule, getQnA) => {
   console.log('Welcome to the Brain Games!');
   const userName = getName();
   console.log(rule);
@@ -25,5 +25,3 @@ function gameEngine(rule, getQnA) {
   }
   console.log(`Congratulations, ${userName}!`);
 }
-
-export default gameEngine;
