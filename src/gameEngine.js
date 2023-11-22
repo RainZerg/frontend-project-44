@@ -4,7 +4,7 @@ const roundsCount = 3;
 
 export default (rule, getQnA) => {
   console.log('Welcome to the Brain Games!');
-  const userName = getName();
+  const userName = greeting();
   console.log(rule);
   let round = 0;
 
@@ -25,7 +25,7 @@ export default (rule, getQnA) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-const getName = () => {
+const greeting = () => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   return userName;
