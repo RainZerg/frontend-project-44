@@ -14,7 +14,7 @@ const getProgression = (startProgression, stepProgression) => {
   return progressions;
 }
 
-const getQnA = () => {
+const getQuestionAndAnswer = () => {
   const minStep = 2;
   const maxStep = 10;
   const start = getRandomNumber(1, 100);
@@ -29,4 +29,4 @@ const getQnA = () => {
   return [question, answer];
 }
 
-export default () => gameEngine(rule, getQnA);
+export default () => gameEngine(rule, getQuestionAndAnswer);

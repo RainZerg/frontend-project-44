@@ -17,10 +17,10 @@ const isPrime = (number) => {
   return true;
 }
 
-const getQnA = () => {
+const getQuestionAndAnswer = () => {
   const question = getRandomNumber(0, 100);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 }
 
-export default () => gameEngine(rule, getQnA);
+export default () => gameEngine(rule, getQuestionAndAnswer);
