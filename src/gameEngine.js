@@ -1,5 +1,4 @@
 import readlinesync from 'readline-sync';
-import getName from './cli.js';
 
 const roundsCount = 3;
 
@@ -7,9 +6,9 @@ export default (rule, getQnA) => {
   console.log('Welcome to the Brain Games!');
   const userName = getName();
   console.log(rule);
-  let correctAnswersCount = 0;
+  let round = 0;
 
-  while (correctAnswersCount < roundsCount) {
+  while (round < roundsCount) {
     const [question, correctAnswer] = getQnA();
     console.log(`Question: ${question}`);
     const userAnswer = readlinesync.question('Your answer: ');
@@ -21,7 +20,13 @@ export default (rule, getQnA) => {
     }
 
     console.log('Correct!');
-    correctAnswersCount += 1;
+    round += 1;
   }
   console.log(`Congratulations, ${userName}!`);
+};
+
+const getName = () => {
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  return userName;
 };

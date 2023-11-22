@@ -1,5 +1,5 @@
 import gameEngine from '../gameEngine.js';
-import getRandomNum from '../getRandomNumber.js';
+import getRandomNumber from '../utils.js';
 
 const rule = 'What number is missing in the progression?';
 
@@ -17,12 +17,12 @@ const getProgression = (startProgression, stepProgression) => {
 const getQnA = () => {
   const minStep = 2;
   const maxStep = 10;
-  const start = getRandomNum(1, 100);
-  const step = getRandomNum(minStep, maxStep);
+  const start = getRandomNumber(1, 100);
+  const step = getRandomNumber(minStep, maxStep);
   const progression = getProgression(start, step);
   const minIndexOfHiddenNumber = 0;
   const maxIndexOfHiddenNumber = progressionLength - 1;
-  const indexOfHiddenNumber = getRandomNum(minIndexOfHiddenNumber, maxIndexOfHiddenNumber);
+  const indexOfHiddenNumber = getRandomNumber(minIndexOfHiddenNumber, maxIndexOfHiddenNumber);
   const answer = String(progression[indexOfHiddenNumber]);
   progression[indexOfHiddenNumber] = '..';
   const question = progression.join(' ');
