@@ -14,14 +14,14 @@ export default (rule, getQnA) => {
     console.log(`Question: ${question}`);
     const userAnswer = readlinesync.question('Your answer: ');
 
-    if (correctAnswer === userAnswer) {
-      console.log('Correct!');
-      correctAnswersCount += 1;
-    } else {
+    if (correctAnswer !== userAnswer) {
       console.log(`"${userAnswer}" is a wrong answer.\nCorrect answer was "${correctAnswer}".`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }
+
+    console.log('Correct!');
+    correctAnswersCount += 1;
   }
   console.log(`Congratulations, ${userName}!`);
 };

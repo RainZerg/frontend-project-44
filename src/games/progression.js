@@ -5,7 +5,7 @@ const rule = 'What number is missing in the progression?';
 
 const progressionLength = 10;
 
-function getProgression(startProgression, stepProgression) {
+const getProgression = (startProgression, stepProgression) => {
   const progressions = [];
   for (let i = 0; i < progressionLength; i += 1) {
     const value = startProgression + stepProgression * i;
@@ -14,7 +14,7 @@ function getProgression(startProgression, stepProgression) {
   return progressions;
 }
 
-function getQnA() {
+const getQnA = () => {
   const minStep = 2;
   const maxStep = 10;
   const start = getRandomNum(1, 100);

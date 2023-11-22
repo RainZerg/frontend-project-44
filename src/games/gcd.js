@@ -3,7 +3,7 @@ import getRandomNum from '../getRandomNumber.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-function answerGcd(a, b) {
+const answerGcd =  (a, b) => {
   if (!b) {
     return a;
   }
@@ -11,7 +11,7 @@ function answerGcd(a, b) {
   return answerGcd(b, a % b);
 }
 
-function getQnA() {
+const getQnA = () => {
   const question = [getRandomNum(0, 100), getRandomNum(0, 100)];
   const answer = answerGcd(...question).toString();
   return [question.join(' '), answer];

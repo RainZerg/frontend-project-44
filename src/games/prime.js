@@ -3,7 +3,7 @@ import getRandomNum from '../getRandomNumber.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function isPrime(number) {
+const isPrime = (number) => {
   if (number <= 1) {
     return false;
   }
@@ -17,7 +17,7 @@ function isPrime(number) {
   return true;
 }
 
-function getQnA() {
+const getQnA = () => {
   const question = getRandomNum(0, 100);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
