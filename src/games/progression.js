@@ -1,5 +1,5 @@
 import gameEngine from '../gameEngine.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 const rule = 'What number is missing in the progression?';
 
@@ -12,7 +12,7 @@ const getProgression = (startProgression, stepProgression) => {
     progressions.push(value);
   }
   return progressions;
-}
+};
 
 const getQuestionAndAnswer = () => {
   const minStep = 2;
@@ -27,6 +27,6 @@ const getQuestionAndAnswer = () => {
   progression[indexOfHiddenNumber] = '..';
   const question = progression.join(' ');
   return [question, answer];
-}
+};
 
 export default () => gameEngine(rule, getQuestionAndAnswer);
